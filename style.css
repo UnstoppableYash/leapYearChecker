@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #877cde;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url(assets/bg.png);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(assets/bg.png); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+main .upper h1 {
+  color: white;
+  font-size: 4.4rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+main .upper h3 {
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  font-size: 2.8rem;
+  margin-bottom: 0.7rem;
+}
+
+main .upper .inputs #year {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+  /* background-color: #877CDE; */
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+main .upper .inputs #check {
+  width: 14rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  margin: 1.2rem;
+  background-color: #877cde;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+main .upper .inputs span {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.what {
+  width: 100vw;
+  height: 50vh;
+  /* background-image: url(assets/bg.png); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.what .card1 {
+  background-color: #877cde;
+  width: 35rem;
+  height: 13rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.what .card1 h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.what .card1 p {
+  font-size: 1.1rem;
+}
+
+main .downArrow {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 3.2rem;
+  color: #877cde;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8));
+}
+
+main .downArrow a {
+  color: #877cde;
+  text-decoration: none;
+}
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 793px) {
+  main .upper h1 {
+    font-size: 3.5rem;
+  }
+  main .upper h3 {
+    font-size: 2.1rem;
+    margin-bottom: 0.7rem;
+  }
+  main .upper .inputs #year {
+    width: 18rem;
+    height: 3.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+  main .upper .inputs #check {
+    width: 13.5rem;
+    height: 3.2rem;
+    margin: 1.2rem;
+    font-size: 1.5rem;
+  }
+  main .upper .inputs span {
+    font-size: 2.3rem;
+  }
+  .what .card1 {
+    width: 32rem;
+    height: 13rem;
+    padding: 1.5rem;
+  }
+  .what .card1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .what .card1 p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  main{
+    padding: 1rem;
+  }
+  main .upper h1 {
+    font-size: 3rem;
+  }
+  main .upper h3 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  main .upper .inputs #year {
+    width: 16rem;
+    height: 3.1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+  main .upper .inputs #check {
+    width: 13rem;
+    height: 3.2rem;
+    margin: 1.2rem;
+    font-size: 1.35rem;
+  }
+  main .upper .inputs span {
+    font-size: 2.3rem;
+  }
+  .what .card1 {
+    width: 25rem;
+    height: 13rem;
+    padding: 1.5rem;
+  }
+  .what .card1 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .what .card1 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  main{
+    padding: 1rem;
+  }
+  main .upper h1 {
+    font-size: 2.4rem;
+  }
+  main .upper h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+  }
+  main .upper .inputs #year {
+    width: 15rem;
+    height: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+  main .upper .inputs #check {
+    width: 12rem;
+    height: 3.2rem;
+    margin: 1.2rem;
+    font-size: 1.3rem;
+  }
+  main .upper .inputs span {
+    font-size: 2rem;
+  }
+  .what .card1 {
+    width: 20rem;
+    height: 13rem;
+    padding: 1.5rem;
+  }
+  .what .card1 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .what .card1 p {
+    font-size: 0.88rem;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  main .upper .inputs span {
+    font-size: 1.8rem;
+  }
+  .what .card1 {
+    width: 16rem;
+    height: 13rem;
+    padding: 1.5rem;
+  }
+  .what .card1 h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .what .card1 p {
+    font-size: 0.82rem;
+  }
+}

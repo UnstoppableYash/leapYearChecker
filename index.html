@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Leap Year Checker" />
+    <meta
+      name="description"
+      content="You can check whether a year is a leap year or not with this tool. A leap year is a year that has 366 days instead of 365 days. Made with ♥ by GoUnstoppable®"
+    />
+    <meta name="image" content="assets/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
+      integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Leap Year Checker</title>
+  </head>
+  <body>
+    <main>
+      <div class="upper">
+        <h1><i class="fas fa-calendar-alt"></i> Leap Year Checker</h1>
+        <h3>Enter the year <i class="fas fa-arrow-down"></i></h3>
+        <div class="inputs">
+          <input type="number" id="year" />
+          <br />
+          <input type="submit" value="Check" id="check" onclick="check()" />
+          <br />
+          <span id="result"></span>
+        </div>
+      </div>
+      <div class="downArrow">
+        <!-- <i class="fas fa-chevron-down"></i> -->
+        <a href="#what"><i class="fas fa-arrow-circle-down"></i></a>
+      </div>
+    </main>
+    <section class="what" id="what">
+      <div class="card1" data-aos="zoom-out">
+        <h3><i class="fas fa-calendar-alt"></i> What is a Leap Year?</h3>
+        <p>
+          Usually a year has 365 days, but in a leap year the year has 366 days
+          instead of 365. This is because of the 29th february in the leap year.
+          Leap year comes after every 4 years.
+        </p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
